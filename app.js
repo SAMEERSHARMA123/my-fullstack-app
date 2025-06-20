@@ -1,10 +1,10 @@
 const { ApolloServer } = require('apollo-server-express');
-const typeDefs = require('../Backend/GraphQL/typeDefs');
-const resolvers = require('../Backend/GraphQL/resolvers');
+const typeDefs = require('./GraphQL/typeDefs');
+const resolvers = require('./GraphQL/resolvers');
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const DB =  require("../Backend/DB/db")
+const DB =  require("./DB/db")
 DB()
 
 const app = express();
